@@ -1,10 +1,16 @@
-import { Button } from "react-bootstrap";
 import "./App.css";
-
+import { BrowserRouter as Browser, Route, Routes } from "react-router-dom";
+import Registration from "./pages/register/Registration";
+import LoginPage from "./pages/login/LoginPage";
 function App() {
   return (
     <div className="">
-      <Button className="fa-solid fa-home">hello</Button>
+      <Browser>
+        <Routes>
+          <Route path="/" element={<LoginPage />} />
+          <Route path="/register" element={<Registration />} />
+        </Routes>
+      </Browser>
     </div>
   );
 }

@@ -14,3 +14,14 @@ export const postAdminUser = async (obj) => {
     };
   }
 };
+export const verifyAdminUser = async (obj) => {
+  try {
+    const { data } = await axios.post(adminAPI + "/verify-email", obj);
+    return data;
+  } catch (error) {
+    return {
+      status: error,
+      message: error.message,
+    };
+  }
+};

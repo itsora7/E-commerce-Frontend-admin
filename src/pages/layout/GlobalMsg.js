@@ -6,7 +6,7 @@ const GlobalMsg = () => {
     <div className="bg-dark text-white">
       <Container className="d-flex justify-content-between p-1 ">
         <div>
-          <i class="fa-solid fa-phone-volume"></i> Call 1300 myshop
+          <i className="fa-solid fa-phone-volume"></i> Call 1300 myshop
         </div>
         <div>
           <a href="#!">
